@@ -7,7 +7,7 @@ class PoseNet extends Component {
 
   static defaultProps = {
     videoWidth: 900,
-    videoHeight: 600,
+    videoHeight: 650,
     flipHorizontal: true,
     algorithm: 'single-pose',
     showVideo: true,
@@ -19,7 +19,8 @@ class PoseNet extends Component {
     nmsRadius: 20,
     outputStride: 32,
     imageScaleFactor: 0.45,
-    skeletonColor: '#ffadea',
+    skeletonColor: '#FFD700',
+    Color: '#FFFFFF',
     skeletonLineWidth: 6,
     loadingText: 'Loading...please be patient...',
   };
@@ -159,6 +160,7 @@ class PoseNet extends Component {
       showPoints,
       showSkeleton,
       skeletonColor,
+      Color,
       skeletonLineWidth
       } = this.props;
     //console.log(minPoseConfidence);
@@ -208,7 +210,7 @@ class PoseNet extends Component {
             drawKeyPoints(
               keypoints,
               minPartConfidence,
-              skeletonColor,
+              Color,
               canvasContext
             );
           }

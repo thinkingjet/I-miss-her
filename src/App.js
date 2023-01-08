@@ -2,11 +2,7 @@ import React from 'react';
 import Camera from './components/Camera.js';
 import './App.css';
 import icon from './Assets/icon.png';
-import settingsIcon from './Assets/settingsIcon.png';
-import playIcon from './Assets/playIcon.png';
-import piano from './Assets/piano.png';
-import guitarbutton from './Assets/guitarbutton.png';
-import Menu from './Menu.js';
+
 import instruments, {instrumentTemplate} from './Instruments.js';
 
 // the vertical side bar was broken before I touched it - James
@@ -112,9 +108,11 @@ class App extends React.Component {
           pageHtml =
           <div>
           <div className='cameraViewParent'>
+            
               <div className='cameraView'>
                   <Camera currentInstrument={this.state.currentInstrument} isHero={this.state.isHero} songId={this.state.songID} modalName={this.state.modalName} minPoseConfience={this.state.minPoseConfidence}/>
               </div>
+            
             </div>
 
 
@@ -174,10 +172,6 @@ class App extends React.Component {
         let sideBar =
           <div className="sidenav">
             <div className="sidenavBg"></div>
-            <div className="title">
-              <i class="fa fa-cog" aria-hidden="true"></i>
-              <h1>Settings</h1>
-            </div>
             <div className="option">
               <i class="fa fa-music" aria-hidden="true"></i>
               <h2>
@@ -187,11 +181,11 @@ class App extends React.Component {
               <div className="dropdown-container">
                 <div>
                   <button onClick={() => this.selectInstrument("xylophone")}>Piano</button>
-                  <i id="pianoCheck" class="fa fa-check" aria-hidden="true"></i>
+                  <i id="pianoCheck" class="fa fa-arrow-left" aria-hidden="true"></i>
                 </div>
                 <div>
                   <button onClick={() => this.selectInstrument("guitar")}>Guitar</button>
-                  <i id="guitarCheck" class="fa fa-check" aria-hidden="true"></i>
+                  <i id="guitarCheck" class="fa fa-arrow-left" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -204,11 +198,11 @@ class App extends React.Component {
               <div className="dropdown-container">    
                 <div>
                   <button onClick={() => this.selectMode(false)}>Freeplay</button>
-                  <i id="freeplayCheck" class="fa fa-check" aria-hidden="true"></i>
+                  <i id="freeplayCheck" class="fa fa-arrow-left" aria-hidden="true"></i>
                 </div>
                 <div>
                   <button onClick={() => this.selectMode(true)}>Song Selections</button>
-                  <i id="songCheck" class="fa fa-check" aria-hidden="true"></i>
+                  <i id="songCheck" class="fa fa-arrow-left" aria-hidden="true"></i>
                 </div>
               </div>
             </div>
@@ -222,7 +216,7 @@ class App extends React.Component {
               <div className="main-content">
                 <div className="header">
                   <img src={icon} alt="Icon"/>
-                  <h1>I-miss-her</h1>
+                  <h1>I-miss-her-studio</h1>
                 </div>
                 <div className="content">
                   {pageHtml}

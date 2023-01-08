@@ -2,17 +2,17 @@
 
 body {
   height: 100vh;
-  background: radial-gradient(83.24% 245.86% at 17.36% 29.74%, rgba(0, 0, 0, 0.42) 0%,
-   rgba(0, 0, 0, 0) 100%), linear-gradient(108.48deg, #312F4E 0.33%, 
-   rgba(85, 72, 145, 0.9) 29.05%, rgba(137, 56, 165, 0.69) 67.27%,
-   rgba(230, 59, 255, 0.62) 100%);
+  background: radial-gradient(83.24% 245.86% at 17.36% 29.74%, rgb(0, 0, 0) 0%,
+   rgb(153, 122, 21) 100%), linear-gradient(108.48deg, rgba(153,101,21) 0.33%, 
+   rgba(255,223,0) 29.05%, rgb(255,223,0) 67.27%,
+   rgb(153,101,21) 100%);
    font-family: 'Ubuntu', sans-serif;
 }
 
 .header {
-  color: white;
-  padding-left: 10px;
-  text-shadow: 0 0 10px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8;
+  color: rgb(255,223,0);
+  padding-left: 650px;
+  text-shadow: 0 0 10px rgb(255,223,0), 0 0 30px rgb(255,223,0), 0 0 40px rgb(255,223,0);
 }
 
 .header img {
@@ -26,7 +26,7 @@ body {
   display: inline-block;
   font-size: 30px;
   margin-top: 21px;
-  border: solid 2px white;
+  border: solid 2pxrgb(255,223,0);
   padding: 8px;
   font-family: Mexcellent;
 }
@@ -68,7 +68,7 @@ body {
   text-align: center;
   color:white;
   padding-top: 30vh;
-  text-shadow: 0 0 10px #be5fff, 0 0 30px #ffaac6, 0 0 40px #ff94b8;
+  text-shadow: 0 0 10px rgb(255,223,0)f, 0 0 30px rgb(255,223,0), 0 0 40px rgb(255,223,0);
 }
 
 .menu {
@@ -95,7 +95,7 @@ body {
   border-radius: 2px;
   font-size: 24px;
   border: none;
-  border: 1px solid pink;
+  border: 1px solid rgb(255,223,0);
 }
 
 
@@ -123,17 +123,17 @@ body {
 
 .border-neon {
   background-color: transparent;
-  border: 2px solid pink;
-  color: pink;
+  border: 2px solid rgb(255,223,0);
+  color: rgb(255, 255, 255);
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
 
 .border-neon:hover, .border-neon:focus {
-  -webkit-box-shadow: inset 0px 0px 8px 3px #ff94b8;
-  box-shadow: 0px 0px 10px 3px #ff94b8, inset 0px 0px 10px 3px #ff94b8;
+  -webkit-box-shadow: inset 0px 0px 8px 3px rgb(255,223,0);
+  box-shadow: 0px 0px 10px 3px rgb(255,223,0), inset 0px 0px 10px 3px rgb(255,223,0);
   border-color: #fff;
-  text-shadow: 0 0 10px #fff, 0 0 30px #ff94b8, 0 0 40px #ff94b8;
+  text-shadow: 0 0 10px #fff, 0 0 30px rgb(255,223,0), 0 0 40px rgb(255,223,0);
 }
 
 .settingsText {
@@ -168,7 +168,7 @@ body {
 .sidenav * {
   padding-left: 20px;
   font-weight: 600;
-  color: white;
+  color: rgb(17, 12, 12);
 }
 
 .sidenav .title {
@@ -234,7 +234,10 @@ body {
 
 /* On mouse-over */
 .sidenav button:hover, .dropdown-btn:hover {
-  color: #ffbef6;
+ 
+  text-shadow: 0px 0px 10px 3px rgb(255,223,0), inset 0px 0px 10px 3px rgb(255,223,0);
+  color: #fff;
+  text-shadow: 0 0 10px #fff, 0 0 30px rgb(255,223,0), 0 0 40px rgb(255,223,0);
 }
 
 /* Main content */
